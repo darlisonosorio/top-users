@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 
-import { ListUserResult } from "src/model/dto/list-user";
-import { UserRepository } from "src/repository/user.repository";
+import { ListUserResult } from "../model/dto/list-user";
+import { UserRepository } from "../repository/user.repository";
 
 @Injectable()
 export class FindAllUsecase {

@@ -18,7 +18,7 @@ import { DeleteUserUsecase } from './usecase/delete-user';
           port: parseInt(process.env.DB_PORT || '5432'),
           user: process.env.DB_USER || 'postgres',
           password: process.env.DB_PASSWORD || 'postgres',
-          database: process.env.DB_NAME || '',
+          database: process.env.DB_NAME || 'db_users',
         },
       },
     }),

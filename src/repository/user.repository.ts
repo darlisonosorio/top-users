@@ -81,10 +81,11 @@ export class UserRepository {
             .then((result) => result[0]));
         return result;
     } catch (error) {
-        throw new RpcException({
-            statusCode: 400,
-            message: 'Email already exists or invalid data.',
-        });
+      console.error('user-error', error);
+      throw new RpcException({
+          statusCode: 400,
+          message: 'Email already exists or invalid data.',
+      });
       throw new BadRequestException(error.message);
     }
   }

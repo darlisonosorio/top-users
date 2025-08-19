@@ -1,7 +1,7 @@
 import { Injectable } from "@nestjs/common";
 import { RpcException } from '@nestjs/microservices';
-import { UserForm } from "src/model/dto/user-form";
-import { UserRepository } from "src/repository/user.repository";
+import { UserForm } from "../model/dto/user-form";
+import { UserRepository } from "../repository/user.repository";
 import { validateOrReject } from 'class-validator';
 import { plainToInstance } from 'class-transformer';
 

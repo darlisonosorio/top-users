@@ -1,7 +1,8 @@
-import { IsString, IsEmail, IsOptional, IsEnum, IsBoolean, IsDate, MaxLength } from 'class-validator';
+import { IsString, IsEmail, IsOptional, IsEnum, IsBoolean, MaxLength } from 'class-validator';
 import { UserStatus } from "../enum/user-status";
 
 export class UserForm {
+
   @IsString()
   @MaxLength(100)
   name: string;
@@ -31,14 +32,17 @@ export class UserForm {
   
   @IsString()
   @MaxLength(100)
+  @IsOptional()
   city: string;
 
   @IsString()
   @MaxLength(100)
+  @IsOptional()
   state: string;
 
   @IsString()
   @MaxLength(20)
+  @IsOptional()
   zip_code: string;
 
   @IsEnum(UserStatus)
@@ -50,4 +54,5 @@ export class UserForm {
 
   @IsOptional()
   created_at?: Date;
+
 }

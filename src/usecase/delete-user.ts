@@ -1,7 +1,6 @@
 import { Injectable } from "@nestjs/common";
 import { RpcException } from '@nestjs/microservices';
-import { User } from "src/model/dto/user";
-import { UserRepository } from "src/repository/user.repository";
+import { UserRepository } from "../repository/user.repository";
 
 @Injectable()
 export class DeleteUserUsecase {

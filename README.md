@@ -28,7 +28,6 @@ DB_NAME=db_users
 
 ## Project setup
 
-install
 ```bash
 $ pnpm install
 ```
@@ -43,7 +42,7 @@ $ npx knex migrate:latest
 $ knex seed:run
 ```
 
-## Compile and run the project
+## Compile and run
 
 ```bash
 # development
@@ -57,6 +56,7 @@ $ pnpm run start:prod
 ```
 
 ## Run tests
+Make sure to have infrascture services running before execute tests
 
 ```bash
 # e2e tests
